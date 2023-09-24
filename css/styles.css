@@ -71,6 +71,21 @@ img {
   gap: 24px;
   align-items: center;
 }
+.current {
+  color: #404bbf;
+  position: relative;
+}
+.current::after {
+  position: absolute;
+  box-sizing: border-box;
+  border-radius: 2px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  bottom: -1px;
+  background-color: #404bbf;
+  content: "";
+}
 
 .logo-one-part {
   color: #4d5ae5;
@@ -110,6 +125,7 @@ img {
   letter-spacing: 0.32px;
   display: inline-block;
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
 
@@ -156,6 +172,7 @@ img {
   color: #434455;
   font-weight: 400;
   letter-spacing: 0.32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-address:hover,
 .header-address:focus {
@@ -207,6 +224,7 @@ img {
   display: block;
   margin: 48px auto 0;
   min-width: 169px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -368,6 +386,9 @@ img {
   background-color: #404bbf;
   text-decoration: underline;
 }
+.social-a:focus {
+  background-color: #404bbf;
+}
 .icons-mini {
   fill: #f4f4fd;
 }
@@ -424,6 +445,7 @@ img {
 .portfolio-li {
   background-color: #ffffff;
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-li:hover {
